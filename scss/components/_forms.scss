@@ -1,0 +1,24 @@
+.form {
+    @include e(input) {
+        font: inherit;
+        color: inherit;
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+        padding: 8px 12px;
+        border: 0;
+        border-bottom: 5px solid $color--main;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+    @include e(label) {
+        @include m(hidden) {
+            display: none;
+        }
+    }
+
+    .btn--default {
+        width: 100%;
+    }
+}

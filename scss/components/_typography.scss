@@ -1,0 +1,19 @@
+.blockquote {
+    border-left: 8px solid $color--main;
+    border-radius: 4px;
+    font-size: 20px;
+    margin: 24px;
+    padding-left: 20px;
+}
+
+.headline--primary {
+    @extend %headline;
+    color: $color--main;
+    margin: 24px;
+}
+
+.headline--secondary {
+    @extend %headline;
+    font-size: 14px;
+    font-weight: 300;
+}

@@ -1,0 +1,28 @@
+@mixin mq($size) {
+    $value: map-get($breakpoints, $size);
+
+    @media screen and (min-width: $value) {
+        @content;
+    }
+}
+
+@mixin flex-column($size: md) {
+    @for $i from 1 through 12 {
+        .grid__col--#{$i} {
+            flex-basis: calc(#{$i/12 * 100%} - 12px);
+            max-width: calc(#{$i/12 * 100%} - 12px);
+        }
+    }
+}
+
+@mixin e($element) {
+    &__#{$element} {
+        @content;
+    }
+}
+
+@mixin m($modifier) {
+    &--#{$modifier} {
+        @content;
+    }
+}

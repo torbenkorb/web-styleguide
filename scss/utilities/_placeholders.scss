@@ -1,0 +1,29 @@
+%link {
+    color: $color--link;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+%image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 12px;
+}
+
+%headline {
+    line-height: 1.2;
+    margin: 0 0 24px;
+}
+
+%nav-item {
+    a {
+        display: inline-block;
+        text-decoration: none;
+        color: inherit;
+        padding: 12px 8px;
+        width: 100%;
+        text-align: center;
+    }
+}

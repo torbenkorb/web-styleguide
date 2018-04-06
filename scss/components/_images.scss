@@ -1,0 +1,20 @@
+[class^="img"] {
+    @extend %image;
+}
+
+.img {
+    @include m(logo) {
+        margin: 0 auto 24px;
+        padding: 0;
+    }
+
+    @include m(frame) {
+        border: 1px solid rgba(0,0,0,0.12);
+    }
+}
+
+@include mq(md) {
+    .img--logo {
+        margin: 0;
+    }
+}

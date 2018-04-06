@@ -1,0 +1,33 @@
+.grid__row:first-of-type {
+    align-items: center;
+}
+
+.nav__item {
+    @extend %nav-item;
+
+    &:first-of-type a {
+        background-color: $color--main;
+        border-radius: 4px;
+        color: #fff;
+    }
+}
+
+
+
+
+
+@include mq(md) {
+    .nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav__item {
+        margin: 0 16px;
+
+        a {
+            width: initial;
+        }
+    }
+
+}
